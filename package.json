@@ -1,0 +1,21 @@
+{
+  "name": "docojs",
+  "description": "DocoJS monorepo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm --recursive build",
+    "prelint": "pnpm --recursive exec tsc",
+    "lint": "eslint .",
+    "prepare": "husky",
+    "test": "pnpm --recursive test"
+  },
+  "author": "Comandeer",
+  "devDependencies": {
+    "@comandeer/eslint-config": "^0.12.0",
+    "commitplease": "^3.2.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11"
+  }
+}

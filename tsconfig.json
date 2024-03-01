@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"noEmit": true,
+		"esModuleInterop": true,
+		"exactOptionalPropertyTypes": true,
+		"lib": [
+			"es2023"
+		],
+		"module": "node16",
+		"moduleResolution": "node16",
+		"noImplicitOverride": true,
+		"noUncheckedIndexedAccess": true,
+		"skipLibCheck": true,
+		"strictNullChecks": true,
+		"strict": true,
+	},
+	"include": [
+		"./packages/*/src/**/*",
+		"./packages/*/tests/**/*"
+	],
+	"exclude": [
+		"./packages/*/tests/__fixtures__/**/*"
+	]
+}

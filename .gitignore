@@ -1,0 +1,17 @@
+node_modules/
+*.*~
+*.db
+.goutputstream-*
+*.bac
+/.project
+coverage/
+.coverage
+dist/
+bin/
+build/
+docs/dist
+npm-debug.log
+/.nyc_output
+/.vscode
+.DS_STORE
+.rollup.cache/

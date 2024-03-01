@@ -1,0 +1,2 @@
+Closes #<ISSUE NUMBER>.
+
