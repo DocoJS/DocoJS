@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@comandeer/eslint-config':
-        specifier: ^0.12.0
-        version: 0.12.0(eslint@8.57.0)(typescript@5.3.3)
+        specifier: ^0.13.0
+        version: 0.13.0(eslint@8.57.0)(typescript@5.3.3)
       commitplease:
         specifier: ^3.2.0
         version: 3.2.0
@@ -1264,8 +1264,8 @@ packages:
       console-control-strings: 1.1.0
     dev: true
 
-  /@comandeer/eslint-config@0.12.0(eslint@8.57.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-ciFHy5ZpUkMzPSpVxkYhoJp/P2j46oXztHHw+5ASfxJG66myg3R7dzMLq53jNRYxp3Wcw2oaNschVq6MOnMDxw==}
+  /@comandeer/eslint-config@0.13.0(eslint@8.57.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-fMuM49TeoAPBSZNebhgzvigjom3w8UaiCZ+ky8Y3cD2yFjedU6dY42OrbZ7aBBXFPQw10AYOJU5ioXCMk3nw2g==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       eslint: '>=8.45.0'

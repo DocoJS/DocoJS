@@ -1,7 +1,9 @@
 import eslintConfig from '@comandeer/eslint-config';
 import formattingConfig from '@comandeer/eslint-config/formatting';
 
+const tsProject = [ './packages/*/tsconfig.json' ];
+
 export default [
-	...eslintConfig,
-	...formattingConfig
+	...eslintConfig( { tsProject } ),
+	...formattingConfig( { tsProject } )
 ];
