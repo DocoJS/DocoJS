@@ -46,6 +46,50 @@ importers:
         specifier: ^5.3.3
         version: 5.3.3
 
+  packages/parser-jsdoc:
+    dependencies:
+      tslib:
+        specifier: ^2.6.2
+        version: 2.6.2
+    devDependencies:
+      '@comandeer/rollup-lib-bundler':
+        specifier: ^0.22.1
+        version: 0.22.1
+      ava:
+        specifier: ^6.1.2
+        version: 6.1.2
+      c8:
+        specifier: ^9.1.0
+        version: 9.1.0
+      tsx:
+        specifier: ^4.7.1
+        version: 4.7.1
+      typescript:
+        specifier: ^5.3.3
+        version: 5.3.3
+
+  packages/renderer-astro:
+    dependencies:
+      tslib:
+        specifier: ^2.6.2
+        version: 2.6.2
+    devDependencies:
+      '@comandeer/rollup-lib-bundler':
+        specifier: ^0.22.1
+        version: 0.22.1
+      ava:
+        specifier: ^6.1.2
+        version: 6.1.2
+      c8:
+        specifier: ^9.1.0
+        version: 9.1.0
+      tsx:
+        specifier: ^4.7.1
+        version: 4.7.1
+      typescript:
+        specifier: ^5.3.3
+        version: 5.3.3
+
 packages:
 
   /@aashutoshrathi/word-wrap@1.2.6:
