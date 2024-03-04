@@ -23,8 +23,5 @@
 	"include": [
 		"src/**/*",
 		"tests/**/*"
-	],
-	"exclude": [
-		"tests/__fixtures__/**/*"
 	]
 }
