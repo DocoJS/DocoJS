@@ -1,1 +1,2 @@
 ./packages/*/dist/**/*
+./packages/*/tests/__fixtures__/**/*.ts
