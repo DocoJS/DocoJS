@@ -38,8 +38,10 @@
   "homepage": "https://github.com/Comandeer/DocoJS#readme",
   "devDependencies": {
     "@comandeer/rollup-lib-bundler": "^0.22.1",
+    "@types/mock-fs": "^4.13.4",
     "ava": "^6.1.2",
     "c8": "^9.1.0",
+    "mock-fs": "^5.2.0",
     "tsx": "^4.7.1",
     "typescript": "^5.3.3"
   },
