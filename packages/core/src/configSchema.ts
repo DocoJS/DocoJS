@@ -14,9 +14,9 @@ const inputSchema = zod.object( {
 const outputSchema = zod.object( {
 	outDir: zod.string(),
 	// TODO: get schema from Renderer interface (ts-to-zod?)
-	renderer: zod.instanceof( class {} ),
+	renderer: zod.object( {} ),
 	// TODO: get schema from Theme interface (ts-to-zod?)
-	theme: zod.object( {} ).default( {} )
+	theme: zod.object( {} )
 } );
 const configSchema = zod.object( {
 	plugins: zod.array( zod.object( {} ) ).default( [] ),
