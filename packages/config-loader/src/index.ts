@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { pathToFileURL } from 'node:url';
 import { globby } from 'globby';
 
 export default async function loadConfig( root: string ): Promise<Record<string, unknown>> {
@@ -15,7 +16,8 @@ export default async function loadConfig( root: string ): Promise<Record<string,
 
 	assert( configPath, 'Configuration file path is defined' );
 
-	const config = await import( configPath );
+	const configUrl = pathToFileURL( configPath );
+	const config = await import( configUrl.href );
 
 	return config.default;
 }
