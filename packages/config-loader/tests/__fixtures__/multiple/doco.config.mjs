@@ -1,3 +1,1 @@
-export default {
-	hubla: 'bubla'
-};
+export default {};

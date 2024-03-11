@@ -1,15 +1,16 @@
 import assert from 'node:assert/strict';
 import { pathToFileURL } from 'node:url';
 import { globby } from 'globby';
+import { Config, configSchema } from '@docojs/core';
 
-export default async function loadConfig( root: string ): Promise<Record<string, unknown>> {
+export default async function loadConfig( root: string ): Promise<Config> {
 	const files = await globby( 'doco.config.{js,mjs}', {
 		cwd: root,
 		absolute: true
 	} );
 
 	if ( files.length === 0 ) {
-		return {};
+		return configSchema.parse( {} );
 	}
 
 	const configPath = files[ 0 ];
@@ -19,5 +20,5 @@ export default async function loadConfig( root: string ): Promise<Record<string,
 	const configUrl = pathToFileURL( configPath );
 	const config = await import( configUrl.href );
 
-	return config.default;
+	return configSchema.parse( config.default );
 }

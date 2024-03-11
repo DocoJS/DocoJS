@@ -2,6 +2,8 @@ import { fileURLToPath } from 'node:url';
 import { dirname, resolve as resolvePath } from 'node:path';
 import test from 'ava';
 import loadConfig from '../src/index.js';
+import { configSchema } from '@docojs/core';
+import { getDefaultConfig } from './__helpers__/schema.js';
 
 const __dirname = dirname( fileURLToPath( import.meta.url ) );
 const fixtureDirPath = resolvePath( __dirname, '__fixtures__' );
@@ -11,6 +13,15 @@ const fixtures = {
 	mjs: resolvePath( fixtureDirPath, 'mjs' ),
 	mutliple: resolvePath( fixtureDirPath, 'multiple' )
 } as const;
+const defaultConfig = getDefaultConfig( configSchema );
+const customConfig = {
+	...defaultConfig,
+	output: {
+		outDir: './dist',
+		renderer: {},
+		theme: {}
+	}
+};
 
 test( 'loadConfig() is a function', ( t ) => {
 	t.is( typeof loadConfig, 'function' );
@@ -19,24 +30,24 @@ test( 'loadConfig() is a function', ( t ) => {
 test( 'loadConfig() returns configuration from doco.config.js file in the provided root directory', async ( t ) => {
 	const config = await loadConfig( fixtures.basic );
 
-	t.deepEqual( config, { foo: 'bar' } );
+	t.deepEqual( config, customConfig );
 } );
 
 test( 'loadConfig() returns configuration from doco.config.mjs file in the provided root directory', async ( t ) => {
 	const config = await loadConfig( fixtures.mjs );
 
-	t.deepEqual( config, { foo: 'bar' } );
+	t.deepEqual( config, customConfig );
 } );
 
 test( 'loadConfig() prefers doco.config.js over doco.config.mjs', async ( t ) => {
 	const config = await loadConfig( fixtures.mutliple );
 
-	t.deepEqual( config, { foo: 'bar' } );
+	t.deepEqual( config, customConfig );
 } );
 
 test( 'loadConfig() returns default configuration when config file ' +
 	'is not present in the provided root directory', async ( t ) => {
 	const config = await loadConfig( fixtures.withoutConfigFile );
 
-	t.deepEqual( config, {} );
+	t.deepEqual( config, defaultConfig );
 } );

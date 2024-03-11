@@ -1,3 +1,7 @@
 export default {
-	foo: 'bar'
+	output: {
+		outDir: './dist',
+		renderer: {},
+		theme: {}
+	}
 };
