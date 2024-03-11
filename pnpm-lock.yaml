@@ -26,6 +26,9 @@ importers:
 
   packages/config-loader:
     dependencies:
+      '@docojs/core':
+        specifier: ^0.0.0
+        version: link:../core
       globby:
         specifier: ^14.0.1
         version: 14.0.1

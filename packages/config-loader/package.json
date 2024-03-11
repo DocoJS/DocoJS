@@ -45,6 +45,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@docojs/core": "^0.0.0",
     "globby": "^14.0.1",
     "tslib": "^2.6.2"
   }
