@@ -42,7 +42,8 @@
     "ava": "^6.1.2",
     "c8": "^9.1.0",
     "tsx": "^4.7.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "zod": "^3.22.4"
   },
   "dependencies": {
     "@docojs/core": "^0.0.0",
