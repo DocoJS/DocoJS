@@ -1,8 +1,9 @@
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve as resolvePath } from 'node:path';
 import test from 'ava';
+import { Config } from '@docojs/core';
 import loadConfig from '../src/index.js';
-import { configSchema } from '@docojs/core';
+import { configSchema } from '../src/configSchema.js';
 import { getDefaultConfig } from './__helpers__/schema.js';
 
 const __dirname = dirname( fileURLToPath( import.meta.url ) );
@@ -14,7 +15,7 @@ const fixtures = {
 	mutliple: resolvePath( fixtureDirPath, 'multiple' )
 } as const;
 const defaultConfig = getDefaultConfig( configSchema );
-const customConfig = {
+const customConfig: Config = {
 	...defaultConfig,
 	output: {
 		outDir: './dist',

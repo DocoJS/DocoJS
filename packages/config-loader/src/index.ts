@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import { pathToFileURL } from 'node:url';
 import { globby } from 'globby';
-import { Config, configSchema } from '@docojs/core';
+import { Config } from '@docojs/core';
+import { configSchema } from './configSchema.js';
 
 export default async function loadConfig( root: string ): Promise<Config> {
 	const files = await globby( 'doco.config.{js,mjs}', {

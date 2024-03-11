@@ -1,6 +1,6 @@
 import test from 'ava';
-import { configSchema } from '../src/index.js';
+import * as core from '../src/index.js';
 
-test( 'configSchema is exported', ( t ) => {
-	t.not( configSchema, undefined );
+test( 'core is an empty import', ( t ) => {
+	t.is ( Object.keys( core ).length, 0 );
 } );

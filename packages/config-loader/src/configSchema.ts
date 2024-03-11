@@ -18,7 +18,8 @@ const outputSchema = zod.object( {
 	// TODO: get schema from Theme interface (ts-to-zod?)
 	theme: zod.object( {} )
 } );
-const configSchema = zod.object( {
+
+export const configSchema = zod.object( {
 	plugins: zod.array( zod.object( {} ) ).default( [] ),
 	parsers: zod.array( parserSchema ).default( [] ),
 	input: inputSchema.default( {
@@ -32,7 +33,3 @@ const configSchema = zod.object( {
 		theme: {}
 	} )
 } );
-
-export type Config = zod.infer<typeof configSchema>;
-
-export { configSchema };
