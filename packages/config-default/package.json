@@ -1,0 +1,50 @@
+{
+  "name": "@docojs/config-default",
+  "version": "0.0.0",
+  "description": "DocoJS default config",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rlb",
+    "test": "c8 ava",
+    "version": "pnpm test && pnpm run build && git add -f bin/ dist/",
+    "postversion": "git rm -r --cached bin/ dist/ && git commit -m \"chore(dist): clean after release [ci skip]\" && git push origin && git push origin --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Comandeer/DocoJS.git"
+  },
+  "keywords": [
+    "DocoJS",
+    "config",
+    "default"
+  ],
+  "author": "Comandeer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Comandeer/DocoJS/issues"
+  },
+  "homepage": "https://github.com/Comandeer/DocoJS#readme",
+  "devDependencies": {
+    "@comandeer/rollup-lib-bundler": "^0.22.1",
+    "ava": "^6.1.2",
+    "c8": "^9.1.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@docojs/core": "workspace:^0.0.0",
+    "tslib": "^2.6.2"
+  }
+}
