@@ -20,16 +20,8 @@ const outputSchema = zod.object( {
 } );
 
 export const configSchema = zod.object( {
-	plugins: zod.array( zod.object( {} ) ).default( [] ),
-	parsers: zod.array( parserSchema ).default( [] ),
-	input: inputSchema.default( {
-		packages: [ '.' ],
-		files: [ './README.md', './src/**/*.{js,ts,cjs,cts,mjs,mts,md}' ],
-		exclude: []
-	} ),
-	output: outputSchema.default( {
-		outDir: './docs',
-		renderer: {},
-		theme: {}
-	} )
+	plugins: zod.array( zod.object( {} ) ),
+	parsers: zod.array( parserSchema ),
+	input: inputSchema,
+	output: outputSchema
 } );

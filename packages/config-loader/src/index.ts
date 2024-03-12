@@ -1,8 +1,9 @@
 import assert from 'node:assert/strict';
 import { pathToFileURL } from 'node:url';
-import { globby } from 'globby';
 import defaultConfig from '@docojs/config-default';
 import { Config } from '@docojs/core';
+import { globby } from 'globby';
+import merge from 'lodash.merge';
 import { configSchema } from './configSchema.js';
 
 export default async function loadConfig( root: string ): Promise<Config> {
@@ -21,6 +22,8 @@ export default async function loadConfig( root: string ): Promise<Config> {
 
 	const configUrl = pathToFileURL( configPath );
 	const config = await import( configUrl.href );
+	const resolvedConfig = merge( {}, defaultConfig, config.default );
+	const parsedConfig: Config = configSchema.parse( resolvedConfig );
 
-	return configSchema.parse( config.default );
+	return parsedConfig;
 }

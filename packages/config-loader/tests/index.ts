@@ -1,10 +1,9 @@
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve as resolvePath } from 'node:path';
 import test from 'ava';
+import defaultConfig from '@docojs/config-default';
 import { Config } from '@docojs/core';
 import loadConfig from '../src/index.js';
-import { configSchema } from '../src/configSchema.js';
-import { getDefaultConfig } from './__helpers__/schema.js';
 
 const __dirname = dirname( fileURLToPath( import.meta.url ) );
 const fixtureDirPath = resolvePath( __dirname, '__fixtures__' );
@@ -14,13 +13,11 @@ const fixtures = {
 	mjs: resolvePath( fixtureDirPath, 'mjs' ),
 	mutliple: resolvePath( fixtureDirPath, 'multiple' )
 } as const;
-const defaultConfig = getDefaultConfig( configSchema );
 const customConfig: Config = {
 	...defaultConfig,
 	output: {
-		outDir: './dist',
-		renderer: {},
-		theme: {}
+		...defaultConfig.output,
+		outDir: './dist'
 	}
 };
 
