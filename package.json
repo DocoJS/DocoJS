@@ -7,6 +7,7 @@
     "build": "pnpm --recursive build",
     "lint": "eslint \"./packages/*/src/**/*.ts\" \"./packages/*/tests/**/*.ts\"",
     "prepare": "husky",
+    "pretest": "pnpm run build",
     "test": "pnpm --recursive test"
   },
   "author": "Comandeer",
