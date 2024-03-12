@@ -38,6 +38,7 @@
   "homepage": "https://github.com/Comandeer/DocoJS#readme",
   "devDependencies": {
     "@comandeer/rollup-lib-bundler": "^0.22.1",
+    "@types/lodash.merge": "^4.6.9",
     "@types/mock-fs": "^4.13.4",
     "ava": "^6.1.2",
     "c8": "^9.1.0",
@@ -48,6 +49,7 @@
     "@docojs/config-default": "workspace:^",
     "@docojs/core": "^0.0.0",
     "globby": "^14.0.1",
+    "lodash.merge": "^4.6.2",
     "tslib": "^2.6.2",
     "zod": "^3.22.4"
   }
