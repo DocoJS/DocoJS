@@ -51,6 +51,9 @@ importers:
 
   packages/config-loader:
     dependencies:
+      '@docojs/config-default':
+        specifier: workspace:^
+        version: link:../config-default
       '@docojs/core':
         specifier: ^0.0.0
         version: link:../core
