@@ -34,4 +34,4 @@ jobs:
       - name: Lint code
         run: pnpm lint
       - name: Run tests
-        run: pnpm --recursive test
+        run: pnpm test
