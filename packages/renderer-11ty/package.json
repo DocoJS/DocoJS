@@ -27,7 +27,7 @@
   },
   "keywords": [
     "DocoJS",
-    "renderer" ,
+    "renderer",
     "Eleventy",
     "11ty"
   ],
@@ -45,6 +45,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
     "tslib": "^2.6.2"
   }
 }
