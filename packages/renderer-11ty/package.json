@@ -1,7 +1,7 @@
 {
-  "name": "@docojs/renderer-astro",
+  "name": "@docojs/renderer-11ty",
   "version": "0.0.0",
-  "description": "DocoJS Astro renderer",
+  "description": "DocoJS Eleventy renderer",
   "type": "module",
   "exports": {
     ".": {
@@ -28,7 +28,8 @@
   "keywords": [
     "DocoJS",
     "renderer" ,
-    "Astro"
+    "Eleventy",
+    "11ty"
   ],
   "author": "Comandeer",
   "license": "MIT",

@@ -195,7 +195,7 @@ importers:
         specifier: ^5.3.3
         version: 5.3.3
 
-  packages/renderer-astro:
+  packages/renderer-11ty:
     dependencies:
       tslib:
         specifier: ^2.6.2
