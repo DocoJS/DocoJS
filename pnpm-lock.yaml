@@ -220,6 +220,31 @@ importers:
         specifier: ^5.3.3
         version: 5.3.3
 
+  packages/theme-default:
+    dependencies:
+      '@docojs/core':
+        specifier: workspace:^0.0.0
+        version: link:../core
+      tslib:
+        specifier: ^2.6.2
+        version: 2.6.2
+    devDependencies:
+      '@comandeer/rollup-lib-bundler':
+        specifier: ^0.22.1
+        version: 0.22.1
+      ava:
+        specifier: ^6.1.2
+        version: 6.1.2
+      c8:
+        specifier: ^9.1.0
+        version: 9.1.0
+      tsx:
+        specifier: ^4.7.1
+        version: 4.7.1
+      typescript:
+        specifier: ^5.3.3
+        version: 5.3.3
+
 packages:
 
   /@11ty/dependency-tree@2.0.1:
