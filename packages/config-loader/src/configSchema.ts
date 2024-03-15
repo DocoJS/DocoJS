@@ -11,12 +11,15 @@ const inputSchema = zod.object( {
 	files: zod.array( zod.string() ),
 	exclude: zod.array( zod.string() )
 } );
+const themeSchema = zod.object( {
+	layouts: zod.record( zod.string() )
+} );
 const outputSchema = zod.object( {
-	outDir: zod.string(),
+	dir: zod.string(),
 	// TODO: get schema from Renderer interface (ts-to-zod?)
 	renderer: zod.object( {} ),
 	// TODO: get schema from Theme interface (ts-to-zod?)
-	theme: zod.object( {} )
+	theme: themeSchema
 } );
 
 export const configSchema = zod.object( {

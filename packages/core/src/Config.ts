@@ -1,4 +1,5 @@
 import { Parser } from './Parser.js';
+import { Theme } from './Theme.js';
 
 interface Input {
 	packages: Array<string>;
@@ -7,9 +8,9 @@ interface Input {
 }
 
 interface Output {
-	outDir: string;
+	dir: string;
 	renderer: Record<string, unknown>;
-	theme: Record<string, unknown>;
+	theme: Theme;
 }
 
 interface ParserConfig {

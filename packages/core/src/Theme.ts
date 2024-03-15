@@ -1,2 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface Theme {}
+export interface Theme {
+	readonly layouts: Record<string, string>;
+}
