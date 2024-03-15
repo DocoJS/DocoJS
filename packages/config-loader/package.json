@@ -46,7 +46,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@docojs/config-default": "workspace:^",
+    "@docojs/config-default": "^0.0.0",
     "@docojs/core": "^0.0.0",
     "globby": "^14.0.1",
     "lodash.merge": "^4.6.2",

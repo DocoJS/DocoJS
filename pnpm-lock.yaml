@@ -27,7 +27,7 @@ importers:
   packages/config-default:
     dependencies:
       '@docojs/core':
-        specifier: workspace:^0.0.0
+        specifier: ^0.0.0
         version: link:../core
       tslib:
         specifier: ^2.6.2
@@ -52,7 +52,7 @@ importers:
   packages/config-loader:
     dependencies:
       '@docojs/config-default':
-        specifier: workspace:^
+        specifier: ^0.0.0
         version: link:../config-default
       '@docojs/core':
         specifier: ^0.0.0
@@ -223,7 +223,7 @@ importers:
   packages/theme-default:
     dependencies:
       '@docojs/core':
-        specifier: workspace:^0.0.0
+        specifier: ^0.0.0
         version: link:../core
       tslib:
         specifier: ^2.6.2
