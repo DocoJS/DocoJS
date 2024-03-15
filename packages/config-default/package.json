@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "@docojs/core": "^0.0.0",
+    "@docojs/theme-default": "^0.0.0",
     "tslib": "^2.6.2"
   }
 }

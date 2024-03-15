@@ -1,4 +1,5 @@
 import { Config } from '@docojs/core';
+import defaultTheme from '@docojs/theme-default';
 
 const config: Config = {
 	plugins: [],
@@ -12,9 +13,9 @@ const config: Config = {
 		exclude: []
 	},
 	output: {
-		outDir: './docs',
+		dir: './docs',
 		renderer: {},
-		theme: {}
+		theme: defaultTheme
 	}
 };
 

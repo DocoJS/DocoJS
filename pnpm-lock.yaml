@@ -29,6 +29,9 @@ importers:
       '@docojs/core':
         specifier: ^0.0.0
         version: link:../core
+      '@docojs/theme-default':
+        specifier: ^0.0.0
+        version: link:../theme-default
       tslib:
         specifier: ^2.6.2
         version: 2.6.2
