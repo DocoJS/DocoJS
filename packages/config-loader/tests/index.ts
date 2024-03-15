@@ -17,7 +17,7 @@ const customConfig: Config = {
 	...defaultConfig,
 	output: {
 		...defaultConfig.output,
-		outDir: './dist'
+		dir: './dist'
 	}
 };
 

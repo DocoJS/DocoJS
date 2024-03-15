@@ -1,7 +1,5 @@
 export default {
 	output: {
-		outDir: './dist',
-		renderer: {},
-		theme: {}
+		dir: './dist'
 	}
 };
