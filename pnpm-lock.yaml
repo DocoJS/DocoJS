@@ -122,6 +122,12 @@ importers:
 
   packages/doco:
     dependencies:
+      '@docojs/config-loader':
+        specifier: ^0.0.0
+        version: link:../config-loader
+      '@docojs/core':
+        specifier: ^0.0.0
+        version: link:../core
       tslib:
         specifier: ^2.6.2
         version: 2.6.2
