@@ -54,9 +54,6 @@ importers:
 
   packages/config-loader:
     dependencies:
-      '@docojs/config-default':
-        specifier: ^0.0.0
-        version: link:../config-default
       '@docojs/core':
         specifier: ^0.0.0
         version: link:../core
@@ -76,6 +73,9 @@ importers:
       '@comandeer/rollup-lib-bundler':
         specifier: ^0.22.1
         version: 0.22.1
+      '@docojs/config-default':
+        specifier: ^0.0.0
+        version: link:../config-default
       '@types/lodash.merge':
         specifier: ^4.6.9
         version: 4.6.9
