@@ -17,9 +17,7 @@
   ],
   "scripts": {
     "build": "rlb",
-    "test": "c8 ava",
-    "version": "pnpm test && pnpm run build && git add -f bin/ dist/",
-    "postversion": "git rm -r --cached bin/ dist/ && git commit -m \"chore(dist): clean after release [ci skip]\" && git push origin && git push origin --tags"
+    "test": "c8 ava"
   },
   "repository": {
     "type": "git",
@@ -35,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/Comandeer/DocoJS/issues"
   },
-  "homepage": "https://github.com/Comandeer/DocoJS#readme",
+  "homepage": "https://github.com/Comandeer/DocoJS/tree/main/packages/parser-typedoc#readme",
   "devDependencies": {
     "@comandeer/rollup-lib-bundler": "^0.22.1",
     "@types/node": "20",
