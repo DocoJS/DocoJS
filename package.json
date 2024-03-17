@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "pnpm --recursive build",
+    "prelint": "pnpm run build",
     "lint": "eslint \"./packages/*/src/**/*.ts\" \"./packages/*/tests/**/*.ts\"",
     "prepare": "husky",
     "pretest": "pnpm run build",
