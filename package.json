@@ -10,7 +10,9 @@
     "prepare": "husky",
     "pretest": "pnpm run build",
     "test": "pnpm --recursive test",
-    "new:package": "node ./dev/packageCreator/packageCreator.js"
+    "new:package": "node ./dev/packageCreator/packageCreator.js",
+    "postnew:package": "pnpm run docs:packagelist",
+    "docs:packagelist": "node ./dev/packageListUpdater/packageListUpdater.js"
   },
   "author": "Comandeer",
   "devDependencies": {
