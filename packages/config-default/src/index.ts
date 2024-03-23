@@ -1,11 +1,10 @@
-import { Config } from '@docojs/core';
+import { ProjectConfig } from '@docojs/core';
 import defaultTheme from '@docojs/theme-default';
 
-const config: Config = {
+const config = {
 	plugins: [],
 	parsers: [],
 	input: {
-		packages: [ '.' ],
 		files: [
 			'./README.md',
 			'./src/**/*.{js,ts,cjs,cts,mjs,mts,md}'
@@ -17,6 +16,6 @@ const config: Config = {
 		renderer: {},
 		theme: defaultTheme
 	}
-};
+} as unknown as ProjectConfig;
 
 export default config;

@@ -1,11 +1,17 @@
 import { Parser } from './Parser.js';
 import { Theme } from './Theme.js';
 
-interface Input {
+interface ProjectInput {
 	packages: Array<string>;
-	files: Array<string>;
-	exclude: Array<string>;
 }
+
+interface PackageInput {
+	files: Array<string>;
+}
+
+type Input = {
+	exclude: Array<string>;
+} & ( ProjectInput | PackageInput );
 
 interface Output {
 	dir: string;
@@ -19,9 +25,24 @@ interface ParserConfig {
 	parser: Parser;
 }
 
-export interface Config {
+export interface ProjectConfig {
+	name: string;
 	input: Input;
 	output: Output;
 	parsers: Array<ParserConfig>;
 	plugins: Array<Record<string, unknown>>;
 }
+
+export interface PackageConfig {
+	name: string;
+	input: PackageInput;
+}
+
+export interface MultiProjectConfig {
+	name: string;
+	projects: Array<string>;
+	plugins: Array<Record<string, unknown>>;
+	output: Output;
+}
+
+export type Config = ProjectConfig | PackageConfig | MultiProjectConfig;

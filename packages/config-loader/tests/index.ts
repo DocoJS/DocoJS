@@ -2,7 +2,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, resolve as resolvePath } from 'node:path';
 import test from 'ava';
 import defaultConfig from '@docojs/config-default';
-import { Config } from '@docojs/core';
+import { ProjectConfig } from '@docojs/core';
 import loadConfig from '../src/index.js';
 
 const __dirname = dirname( fileURLToPath( import.meta.url ) );
@@ -25,8 +25,9 @@ const fixtures = {
 		projectRoot: resolvePath( fixtureDirPath, 'ancestor' )
 	}
 } as const;
-const customConfig: Config = {
+const customConfig: ProjectConfig = {
 	...defaultConfig,
+	name: 'test',
 	output: {
 		...defaultConfig.output,
 		dir: './dist'
