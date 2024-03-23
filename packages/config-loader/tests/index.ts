@@ -23,8 +23,15 @@ const fixtures = {
 	ancestor: {
 		cwd: resolvePath( fixtureDirPath, 'ancestor', 'child', 'grandchild' ),
 		projectRoot: resolvePath( fixtureDirPath, 'ancestor' )
+	},
+	fallbackNamePackageJSON: {
+		cwd: resolvePath( fixtureDirPath, 'fallbackNamePackageJSON' )
 	}
 } as const;
+const defaultConfigWithName: ProjectConfig = {
+	...defaultConfig,
+	name: 'Untitled project'
+};
 const customConfig: ProjectConfig = {
 	...defaultConfig,
 	name: 'test',
@@ -67,7 +74,7 @@ test( 'loadConfig() returns default configuration when config file ' +
 	'is not present in the provided root directory and the default config is provided', async ( t ) => {
 	const config = await loadConfig( fixtures.withoutConfigFile.cwd, { defaultConfig } );
 
-	t.deepEqual( config, defaultConfig );
+	t.deepEqual( config, defaultConfigWithName );
 } );
 
 test( 'loadConfig() returns config from the doco.config.js files in the ancestor directory', async ( t ) => {
@@ -77,4 +84,18 @@ test( 'loadConfig() returns config from the doco.config.js files in the ancestor
 	} );
 
 	t.deepEqual( config, customConfig );
+} );
+
+test( 'loadConfig() fallbacks to the name from package.json when ' +
+	'the config does not contain the name property', async ( t ) => {
+	const config = await loadConfig( fixtures.fallbackNamePackageJSON.cwd, { defaultConfig } );
+
+	t.is( config?.name, 'package-name' );
+} );
+
+test( 'loadConfig() fallbacks to the \'Untitled project\' when ' +
+	'the config does not contain the name property and there is no package.json file', async ( t ) => {
+	const config = await loadConfig( fixtures.withoutConfigFile.cwd, { defaultConfig } );
+
+	t.is( config?.name, 'Untitled project' );
 } );

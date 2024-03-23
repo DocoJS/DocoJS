@@ -11,6 +11,10 @@ interface LoadConfigOptions {
 	defaultConfig?: Config | undefined;
 }
 
+interface ConfigModule {
+	default: Config;
+}
+
 export default async function loadConfig(
 	cwd: string,
 	{
@@ -25,7 +29,7 @@ export default async function loadConfig(
 
 	if ( files.length === 0 ) {
 		if ( cwd === projectRoot ) {
-			return defaultConfig;
+			return defaultConfig === undefined ? undefined : addFallbackNameToConfig( cwd, defaultConfig );
 		}
 
 		const parentDir = resolvePath( cwd, '..' );
@@ -41,9 +45,42 @@ export default async function loadConfig(
 	assert( configPath, 'Configuration file path is defined' );
 
 	const configUrl = pathToFileURL( configPath );
-	const config = await import( configUrl.href );
-	const resolvedConfig = merge( {}, defaultConfig, config.default );
+	const { default: config }: ConfigModule = await import( configUrl.href );
+	const configWithName = await addFallbackNameToConfig( cwd, config );
+	const resolvedConfig = merge( {}, defaultConfig, configWithName );
+
 	const parsedConfig: Config = configSchema.parse( resolvedConfig );
 
 	return parsedConfig;
+}
+
+interface PackageJSON {
+	name: string;
+}
+
+interface PackageJSONModule {
+	default: PackageJSON;
+}
+
+async function addFallbackNameToConfig( cwd: string, config: Partial<Config> ): Promise<Config> {
+	if ( config.name !== undefined ) {
+		return config as Config;
+	}
+
+	let name: string;
+
+	try {
+		const packageJSONPath = resolvePath( cwd, 'package.json' );
+		const { default: packageJSON }: PackageJSONModule = await import( packageJSONPath, {
+			with: {
+				type: 'json'
+			}
+		} );
+
+		name = packageJSON.name;
+	} catch {
+		name = 'Untitled project';
+	}
+
+	return merge( {}, config as Config, { name } );
 }
