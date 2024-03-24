@@ -67,8 +67,6 @@ async function addFallbackNameToConfig( cwd: string, config: Partial<Config> ): 
 		return config as Config;
 	}
 
-	let name: string;
-
 	try {
 		const packageJSONPath = resolvePath( cwd, 'package.json' );
 		const { default: packageJSON }: PackageJSONModule = await import( packageJSONPath, {
@@ -77,10 +75,10 @@ async function addFallbackNameToConfig( cwd: string, config: Partial<Config> ): 
 			}
 		} );
 
-		name = packageJSON.name;
+		return merge( {}, config as Config, {
+			name: packageJSON.name
+		} );
 	} catch {
-		name = 'Untitled project';
+		return config as Config;
 	}
-
-	return merge( {}, config as Config, { name } );
 }

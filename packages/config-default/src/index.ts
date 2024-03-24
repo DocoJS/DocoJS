@@ -1,7 +1,8 @@
 import { ProjectConfig } from '@docojs/core';
 import defaultTheme from '@docojs/theme-default';
 
-const config = {
+const config: ProjectConfig = {
+	name: 'Untitled project',
 	plugins: [],
 	parsers: [],
 	input: {
@@ -16,6 +17,6 @@ const config = {
 		renderer: {},
 		theme: defaultTheme
 	}
-} as unknown as ProjectConfig;
+};
 
 export default config;
