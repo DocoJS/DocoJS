@@ -69,7 +69,8 @@ async function addFallbackNameToConfig( cwd: string, config: Partial<Config> ): 
 
 	try {
 		const packageJSONPath = resolvePath( cwd, 'package.json' );
-		const { default: packageJSON }: PackageJSONModule = await import( packageJSONPath, {
+		const { href: packageJSONURL } = pathToFileURL( packageJSONPath );
+		const { default: packageJSON }: PackageJSONModule = await import( packageJSONURL, {
 			with: {
 				type: 'json'
 			}
