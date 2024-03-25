@@ -6,6 +6,7 @@ Monorepo for DocoJS – a documentation generator for TS & JS projects.
 <!--packages:start-->
 | Package | npm version |
 | ----- | ---- |
+| [`@docojs/cli`](https://github.com/Comandeer/DocoJS/tree/main/packages/cli) | [![npm (scoped)](https://img.shields.io/npm/v/@docojs/cli.svg)](https://npmjs.com/package/@docojs/cli) |
 | [`@docojs/config-default`](https://github.com/Comandeer/DocoJS/tree/main/packages/config-default) | [![npm (scoped)](https://img.shields.io/npm/v/@docojs/config-default.svg)](https://npmjs.com/package/@docojs/config-default) |
 | [`@docojs/config-loader`](https://github.com/Comandeer/DocoJS/tree/main/packages/config-loader) | [![npm (scoped)](https://img.shields.io/npm/v/@docojs/config-loader.svg)](https://npmjs.com/package/@docojs/config-loader) |
 | [`@docojs/core`](https://github.com/Comandeer/DocoJS/tree/main/packages/core) | [![npm (scoped)](https://img.shields.io/npm/v/@docojs/core.svg)](https://npmjs.com/package/@docojs/core) |
