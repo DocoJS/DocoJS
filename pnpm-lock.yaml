@@ -147,6 +147,9 @@ importers:
 
   packages/doco:
     dependencies:
+      '@docojs/cli':
+        specifier: ^0.0.0
+        version: link:../cli
       '@docojs/config-loader':
         specifier: ^0.0.0
         version: link:../config-loader
