@@ -9,11 +9,13 @@
       "import": "./dist/index.js"
     }
   },
+  "bin": {
+    "doco": "./dist/bin/doco.js"
+  },
   "engines": {
     "node": ">=20.0.0"
   },
   "files": [
-    "bin",
     "dist"
   ],
   "scripts": {
