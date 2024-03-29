@@ -1,6 +1,11 @@
 #!/usr/bin/env node
-import cli from '@docojs/cli';
 
-const program = cli();
+import { Command } from 'commander';
 
-program.parse();
+const program = new Command();
+
+program.
+	name( 'doco' ).
+	description( 'Documentation generator for JS & TS projects' ).
+	version( '0.0.0.' ).
+	parse();

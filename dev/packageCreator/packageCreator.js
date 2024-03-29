@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 import { cp, readFile, writeFile } from 'node:fs/promises';
 import { dirname, resolve as resolvePath } from 'node:path';
 import { argv, cwd } from 'node:process';

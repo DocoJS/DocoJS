@@ -24,31 +24,6 @@ importers:
         specifier: ^9.0.11
         version: 9.0.11
 
-  packages/cli:
-    dependencies:
-      commander:
-        specifier: ^12.0.0
-        version: 12.0.0
-      tslib:
-        specifier: ^2.6.2
-        version: 2.6.2
-    devDependencies:
-      '@comandeer/rollup-lib-bundler':
-        specifier: ^0.22.1
-        version: 0.22.1
-      ava:
-        specifier: ^6.1.2
-        version: 6.1.2
-      c8:
-        specifier: ^9.1.0
-        version: 9.1.0
-      tsx:
-        specifier: ^4.7.1
-        version: 4.7.1
-      typescript:
-        specifier: ^5.3.3
-        version: 5.3.3
-
   packages/config-default:
     dependencies:
       '@docojs/core':
@@ -147,15 +122,15 @@ importers:
 
   packages/doco:
     dependencies:
-      '@docojs/cli':
-        specifier: ^0.0.0
-        version: link:../cli
       '@docojs/config-loader':
         specifier: ^0.0.0
         version: link:../config-loader
       '@docojs/core':
         specifier: ^0.0.0
         version: link:../core
+      commander:
+        specifier: ^12.0.0
+        version: 12.0.0
       tslib:
         specifier: ^2.6.2
         version: 2.6.2
@@ -3302,7 +3277,7 @@ packages:
     dev: true
 
   /concat-map@0.0.1:
-    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
+    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
 
   /concordance@5.0.4:
     resolution: {integrity: sha512-OAcsnTEYu1ARJqWVGwf4zh4JDfHZEaSNlNccFmt8YjB2l/n19/PF2viLINHc57vO4FKIAFl2FWASIGZZWZ2Kxw==}
