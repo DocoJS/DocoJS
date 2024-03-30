@@ -1,0 +1,47 @@
+{
+  "name": "@docojs/parser-anubis",
+  "version": "0.0.0",
+  "description": "DocoJS Anubis parser",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rlb",
+    "test": "c8 ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Comandeer/DocoJS.git"
+  },
+  "keywords": [
+    "DocoJS",
+    "parser",
+    "Anubis"
+  ],
+  "author": "Comandeer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Comandeer/DocoJS/issues"
+  },
+  "homepage": "https://github.com/Comandeer/DocoJS/tree/main/packages/parser-anubis#readme",
+  "devDependencies": {
+    "@comandeer/rollup-lib-bundler": "^0.22.1",
+    "ava": "^6.1.2",
+    "c8": "^9.1.0",
+    "tsx": "^4.7.1"
+  },
+  "dependencies": {
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.3"
+  }
+}
