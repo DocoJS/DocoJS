@@ -49,8 +49,8 @@ importers:
         specifier: ^4.7.1
         version: 4.7.1
       typescript:
-        specifier: ^5.3.3
-        version: 5.3.3
+        specifier: ^5.4.3
+        version: 5.4.3
 
   packages/config-loader:
     dependencies:
@@ -92,8 +92,8 @@ importers:
         specifier: ^4.7.1
         version: 4.7.1
       typescript:
-        specifier: ^5.3.3
-        version: 5.3.3
+        specifier: ^5.4.3
+        version: 5.4.3
 
   packages/core:
     dependencies:
@@ -117,8 +117,8 @@ importers:
         specifier: ^4.7.1
         version: 4.7.1
       typescript:
-        specifier: ^5.3.3
-        version: 5.3.3
+        specifier: ^5.4.3
+        version: 5.4.3
 
   packages/doco:
     dependencies:
@@ -148,8 +148,8 @@ importers:
         specifier: ^4.7.1
         version: 4.7.1
       typescript:
-        specifier: ^5.3.3
-        version: 5.3.3
+        specifier: ^5.4.3
+        version: 5.4.3
 
   packages/parser-jsdoc:
     dependencies:
@@ -176,8 +176,8 @@ importers:
         specifier: ^4.7.1
         version: 4.7.1
       typescript:
-        specifier: ^5.3.3
-        version: 5.3.3
+        specifier: ^5.4.3
+        version: 5.4.3
 
   packages/parser-typedoc:
     dependencies:
@@ -186,7 +186,7 @@ importers:
         version: 2.6.2
       typedoc:
         specifier: ^0.25.12
-        version: 0.25.12(typescript@5.3.3)
+        version: 0.25.12(typescript@5.4.3)
     devDependencies:
       '@comandeer/rollup-lib-bundler':
         specifier: ^0.22.1
@@ -204,8 +204,8 @@ importers:
         specifier: ^4.7.1
         version: 4.7.1
       typescript:
-        specifier: ^5.3.3
-        version: 5.3.3
+        specifier: ^5.4.3
+        version: 5.4.3
 
   packages/renderer-11ty:
     dependencies:
@@ -229,8 +229,8 @@ importers:
         specifier: ^4.7.1
         version: 4.7.1
       typescript:
-        specifier: ^5.3.3
-        version: 5.3.3
+        specifier: ^5.4.3
+        version: 5.4.3
 
   packages/theme-default:
     dependencies:
@@ -254,8 +254,8 @@ importers:
         specifier: ^4.7.1
         version: 4.7.1
       typescript:
-        specifier: ^5.3.3
-        version: 5.3.3
+        specifier: ^5.4.3
+        version: 5.4.3
 
 packages:
 
@@ -1615,7 +1615,7 @@ packages:
       '@rollup/plugin-commonjs': 25.0.7(rollup@3.29.4)
       '@rollup/plugin-json': 6.1.0(rollup@3.29.4)
       '@rollup/plugin-terser': 0.4.4(rollup@3.29.4)
-      '@rollup/plugin-typescript': 11.1.6(rollup@3.29.4)(tslib@2.6.2)(typescript@5.3.3)
+      '@rollup/plugin-typescript': 11.1.6(rollup@3.29.4)(tslib@2.6.2)(typescript@5.4.3)
       '@rollup/plugin-virtual': 3.0.2(rollup@3.29.4)
       console-control-strings: 1.1.0
       globby: 13.2.2
@@ -1623,10 +1623,10 @@ packages:
       pathe: 1.1.2
       rimraf: 5.0.5
       rollup: 3.29.4
-      rollup-plugin-dts: 5.3.1(rollup@3.29.4)(typescript@5.3.3)
+      rollup-plugin-dts: 5.3.1(rollup@3.29.4)(typescript@5.4.3)
       rollup-plugin-preserve-shebang: 1.0.1
       tslib: 2.6.2
-      typescript: 5.3.3
+      typescript: 5.4.3
     transitivePeerDependencies:
       - '@types/babel__core'
       - supports-color
@@ -2137,7 +2137,7 @@ packages:
       terser: 5.28.1
     dev: true
 
-  /@rollup/plugin-typescript@11.1.6(rollup@3.29.4)(tslib@2.6.2)(typescript@5.3.3):
+  /@rollup/plugin-typescript@11.1.6(rollup@3.29.4)(tslib@2.6.2)(typescript@5.4.3):
     resolution: {integrity: sha512-R92yOmIACgYdJ7dJ97p4K69I8gg6IEHt8M7dUBxN3W6nrO8uUxX5ixl0yU/N3aZTi8WhPuICvOHXQvF6FaykAA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -2154,7 +2154,7 @@ packages:
       resolve: 1.22.8
       rollup: 3.29.4
       tslib: 2.6.2
-      typescript: 5.3.3
+      typescript: 5.4.3
     dev: true
 
   /@rollup/plugin-virtual@3.0.2(rollup@3.29.4):
@@ -2288,7 +2288,7 @@ packages:
     resolution: {integrity: sha512-loB369iXNmAZglwWATL+WRe+CRMmmBPtpolYzIebFaX4YA3x+BEfLqhUAV9WanycKI3TG1IMr5bMJDajDKLlUQ==}
     requiresBuild: true
     dependencies:
-      '@types/node': 20.11.24
+      '@types/node': 20.12.2
     dev: true
     optional: true
 
@@ -2343,7 +2343,7 @@ packages:
   /@types/mock-fs@4.13.4:
     resolution: {integrity: sha512-mXmM0o6lULPI8z3XNnQCpL0BGxPwx1Ul1wXYEPBGl4efShyxW2Rln0JOPEWGyZaYZMM6OVXM/15zUuFMY52ljg==}
     dependencies:
-      '@types/node': 20.11.24
+      '@types/node': 20.12.2
     dev: true
 
   /@types/node@20.11.24:
@@ -2357,7 +2357,6 @@ packages:
     dependencies:
       undici-types: 5.26.5
     dev: true
-    optional: true
 
   /@types/semver@7.5.8:
     resolution: {integrity: sha512-I8EUhyrgfLrcTkzV3TSsGyl1tSuPrEDzr0yd5m90UgNxQkyDXULk3b6MlQqTCpZpNtWe1K0hzclnZkTcLBe2UQ==}
@@ -5604,6 +5603,7 @@ packages:
   /punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
+    requiresBuild: true
     dev: true
 
   /queue-microtask@1.2.3:
@@ -5775,7 +5775,7 @@ packages:
       glob: 10.3.10
     dev: true
 
-  /rollup-plugin-dts@5.3.1(rollup@3.29.4)(typescript@5.3.3):
+  /rollup-plugin-dts@5.3.1(rollup@3.29.4)(typescript@5.4.3):
     resolution: {integrity: sha512-gusMi+Z4gY/JaEQeXnB0RUdU82h1kF0WYzCWgVmV4p3hWXqelaKuCvcJawfeg+EKn2T1Ie+YWF2OiN1/L8bTVg==}
     engines: {node: '>=v14.21.3'}
     peerDependencies:
@@ -5784,7 +5784,7 @@ packages:
     dependencies:
       magic-string: 0.30.7
       rollup: 3.29.4
-      typescript: 5.3.3
+      typescript: 5.4.3
     optionalDependencies:
       '@babel/code-frame': 7.24.2
     dev: true
@@ -6227,7 +6227,7 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /typedoc@0.25.12(typescript@5.3.3):
+  /typedoc@0.25.12(typescript@5.4.3):
     resolution: {integrity: sha512-F+qhkK2VoTweDXd1c42GS/By2DvI2uDF4/EpG424dTexSHdtCH52C6IcAvMA6jR3DzAWZjHpUOW+E02kyPNUNw==}
     engines: {node: '>= 16'}
     hasBin: true
@@ -6238,19 +6238,13 @@ packages:
       marked: 4.3.0
       minimatch: 9.0.3
       shiki: 0.14.7
-      typescript: 5.3.3
+      typescript: 5.4.3
     dev: false
-
-  /typescript@5.3.3:
-    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
-    engines: {node: '>=14.17'}
-    hasBin: true
 
   /typescript@5.4.3:
     resolution: {integrity: sha512-KrPd3PKaCLr78MalgiwJnA25Nm8HAmdwN3mYUYZgG/wizIo9EainNVQI9/yDavtVFRN2h3k8uf3GLHuhDMgEHg==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: true
 
   /typical@2.6.1:
     resolution: {integrity: sha512-ofhi8kjIje6npGozTip9Fr8iecmYfEbS06i0JnIg+rh51KakryWF4+jX8lLKZVhy6N+ID45WYSFCxPOdTWCzNg==}
