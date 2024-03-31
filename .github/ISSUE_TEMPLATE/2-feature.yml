@@ -17,7 +17,7 @@ body:
     attributes:
       label: Package name
       description: To which package the feature should be added?
-      placeholder: '@docojs/doco'
+      value: '@docojs/doco'
   - type: textarea
     attributes:
       label: Other details

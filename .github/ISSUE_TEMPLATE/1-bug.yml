@@ -23,12 +23,12 @@ body:
     attributes:
       label: Package name
       description: In which package the bug appears?
-      placeholder: '@docojs/doco'
+      value: '@docojs/doco'
   - type: input
     attributes:
       label: Package version
       description: In which version of the package mentioned above the bug appears?
-      placeholder: 'v1.0.0'
+      value: 'main'
   - type: textarea
     attributes:
       label: Other details
