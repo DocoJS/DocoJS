@@ -13,6 +13,11 @@ body:
       description: What have to be implemented/changed for this task?
       value: |-
         1. …
+  - type: input
+    attributes:
+      label: Package name
+      description: Which package is affected by the task?
+      placeholder: '@docojs/doco'
   - type: textarea
     attributes:
       label: Other details

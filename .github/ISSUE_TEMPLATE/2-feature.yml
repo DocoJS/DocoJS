@@ -13,6 +13,11 @@ body:
       description: What have to be implemented for this feature?
       value: |-
         1. …
+  - type: input
+    attributes:
+      label: Package name
+      description: To which package the feature should be added?
+      placeholder: '@docojs/doco'
   - type: textarea
     attributes:
       label: Other details
