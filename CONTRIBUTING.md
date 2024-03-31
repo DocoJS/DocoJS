@@ -12,7 +12,26 @@ First of all: thanks for your effort!
 
 1. If you want to contribute code to this package, you should do it via [pull request](/../../pulls).
 2. First of all, fork this repository and create `t/<number>` branch, where `<number>` is a number of [an issue](/../../issues) you're going to fix.
-3. Write your code and commit to your branch.
-4. Ensure that everything is working by writing some tests and building the package (`npm run build`).
-5. If you're changing some existing methods or adding new ones, remember about [updating API docs](http://usejsdoc.org/).
-6. If everything's working fine, you can create a new pull request and relax, waiting for merge!
+3. Prepare the [development environment](#development-environment).
+4. Write your code and commit to your branch.
+	* Commit messages should use the [Conventional Commits convention](https://www.conventionalcommits.org/en/v1.0.0/). The repository uses Commitizen to help in composing a commit message. You can use it by running the `git cz` command.
+	* Please use the name of the package as the scope (with or without the `@docojs/` prefix), e.g. `feat(@docojs/doco): some new cool feature` or `feat(doco): some new cool feature`.
+5. Ensure that everything is working by writing some tests and running them (`pnpm run test` in the package directory or in the main repo directory).
+7. If everything works fine, you can create a new pull request and relax, waiting for merge!
+
+### Repository structure
+
+This repository is a monorepo, containing many npm packages.
+
+```
+| - dev/ ← Dev scripts (e.g. for updating the README.md file)
+| - packages/ ← Directory containing npm packages
+|   | - <package name>
+|   |   | - src/ ← Package's source code
+|   |   | - tests/ ← Package's tests
+```
+
+## Development environment
+
+1. The project uses `pnpm` as the package manager. If you don't have it installed, you'll need to [install it](https://pnpm.io/installation).
+2. To setup all Git hooks and linting tools, run `pnpm install --frozen-lockfile`.
