@@ -14,7 +14,7 @@ const config: ProjectConfig = {
 	},
 	output: {
 		dir: './docs',
-		renderer: {},
+		generator: {},
 		theme: defaultTheme
 	}
 };

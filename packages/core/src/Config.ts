@@ -15,7 +15,7 @@ type Input = {
 
 interface Output {
 	dir: string;
-	renderer: Record<string, unknown>;
+	generator: Record<string, unknown>;
 	theme: Theme;
 }
 

@@ -23,8 +23,8 @@ const themeSchema = zod.object( {
 } );
 const outputSchema = zod.object( {
 	dir: zod.string(),
-	// TODO: get schema from Renderer interface (ts-to-zod?)
-	renderer: zod.object( {} ),
+	// TODO: get schema from Generator interface (ts-to-zod?)
+	generator: zod.object( {} ),
 	// TODO: get schema from Theme interface (ts-to-zod?)
 	theme: themeSchema
 } );

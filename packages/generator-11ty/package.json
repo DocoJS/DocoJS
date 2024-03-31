@@ -1,7 +1,7 @@
 {
-  "name": "@docojs/renderer-11ty",
+  "name": "@docojs/generator-11ty",
   "version": "0.0.0",
-  "description": "DocoJS Eleventy renderer",
+  "description": "DocoJS Eleventy generator",
   "type": "module",
   "exports": {
     ".": {
@@ -25,7 +25,7 @@
   },
   "keywords": [
     "DocoJS",
-    "renderer",
+    "generator",
     "Eleventy",
     "11ty"
   ],
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/Comandeer/DocoJS/issues"
   },
-  "homepage": "https://github.com/Comandeer/DocoJS/tree/main/packages/renderer-11ty#readme",
+  "homepage": "https://github.com/Comandeer/DocoJS/tree/main/packages/generator-11ty#readme",
   "devDependencies": {
     "@comandeer/rollup-lib-bundler": "^0.22.1",
     "ava": "^6.1.2",
