@@ -1,0 +1,20 @@
+name: 🔨 Task
+description: Issue that isn't a feature or a bug.
+labels:
+  - task
+body:
+  - type: textarea
+    attributes:
+      label: Task description
+      description: What has to be done?
+  - type: textarea
+    attributes:
+      label: Requirements
+      description: What have to be implemented/changed for this task?
+      value: |-
+        1. …
+  - type: textarea
+    attributes:
+      label: Other details
+      description: >
+        Any other details that do not fit into other fields, e.g. reference to a related issue/PR.

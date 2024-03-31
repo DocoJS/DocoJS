@@ -1,0 +1,20 @@
+name: 🚀 Feature request
+description: Request for a new feature.
+labels:
+  - feature
+body:
+  - type: textarea
+    attributes:
+      label: Description
+      description: What feature are you requesting?
+  - type: textarea
+    attributes:
+      label: Technical requirements
+      description: What have to be implemented for this feature?
+      value: |-
+        1. …
+  - type: textarea
+    attributes:
+      label: Other details
+      description: >
+        Any other details that do not fit into other fields, e.g. reference to a related issue/PR.

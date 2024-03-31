@@ -1,0 +1,36 @@
+name: 🐛 Bug report
+description: Report something that does not work as intended.
+labels:
+  - bug
+body:
+  - type: textarea
+    attributes:
+      label: Reproduction procedure
+      description: Steps to reproduce the bug.
+      placeholder: |-
+        1. …
+        2. …
+        3. …
+  - type: textarea
+    attributes:
+      label: Current behavior
+      description: What is happening?
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: What should happen?
+  - type: input
+    attributes:
+      label: Package name
+      description: In which package the bug appears?
+      placeholder: '@docojs/doco'
+  - type: input
+    attributes:
+      label: Package version
+      description: In which version of the package mentioned above the bug appears?
+      placeholder: 'v1.0.0'
+  - type: textarea
+    attributes:
+      label: Other details
+      description: >
+        Any other details that do not fit into other fields, e.g. reference to a related issue/PR.
