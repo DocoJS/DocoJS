@@ -1,2 +1,1 @@
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface Parser  {}
+export type Parser = ( files: Array<string> ) => Promise<unknown>;

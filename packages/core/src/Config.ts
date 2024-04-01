@@ -1,3 +1,4 @@
+import { Generator } from './Generator.js';
 import { Parser } from './Parser.js';
 import { Theme } from './Theme.js';
 
@@ -15,7 +16,7 @@ type Input = {
 
 interface Output {
 	dir: string;
-	generator: Record<string, unknown>;
+	generator: Generator;
 	theme: Theme;
 }
 

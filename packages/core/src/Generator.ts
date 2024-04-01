@@ -1,2 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface Generator {}
+import { Theme } from './Theme.js';
+
+export type Generator = ( inputDirPath: string, outputDirPath: string, theme: Theme ) => Promise<void>;
