@@ -18,6 +18,7 @@ First of all: thanks for your effort!
 	* Please use the name of the package as the scope (with or without the `@docojs/` prefix), e.g. `feat(@docojs/doco): some new cool feature` or `feat(doco): some new cool feature`.
 5. Ensure that everything is working by writing some tests and running them (`pnpm run test` in the package directory or in the main repo directory).
 7. If everything works fine, you can create a new pull request and relax, waiting for merge!
+	* The PR title should also follow the [Conventional Commits convention](https://www.conventionalcommits.org/en/v1.0.0/). It should describe the overall goal of the PR, e.g. `fix(core): fix incorrect date generation code`. All PRs are squashed before merging and their titles are used as the merge commit message by default.
 
 ### Repository structure
 
