@@ -33,15 +33,5 @@
   "bugs": {
     "url": "https://github.com/Comandeer/DocoJS/issues"
   },
-  "homepage": "https://github.com/Comandeer/DocoJS/tree/main/packages/{{PACKAGE_NAME}}#readme",
-  "devDependencies": {
-    "@comandeer/rollup-lib-bundler": "^0.22.1",
-    "ava": "^6.1.2",
-    "c8": "^9.1.0",
-    "tsx": "^4.7.1",
-    "typescript": "^5.3.3"
-  },
-  "dependencies": {
-    "tslib": "^2.6.2"
-  }
+  "homepage": "https://github.com/Comandeer/DocoJS/tree/main/packages/{{PACKAGE_NAME}}#readme"
 }
