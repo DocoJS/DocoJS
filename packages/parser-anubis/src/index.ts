@@ -1,44 +1,21 @@
+import { readFile } from 'node:fs/promises';
 import ts from 'typescript';
 
-export default async function parse(): Promise<ts.SourceFile> {
-	const code = 'console.log( \'Hello, world!\' );';
-	const compilerHost: ts.CompilerHost = {
-		fileExists: () => {
-			return true;
-		},
-		getCanonicalFileName: ( filename ) => {
-			return filename;
-		},
-		getCurrentDirectory: () => {
-			return '';
-		},
-		getDefaultLibFileName: () => {
-			return 'lib.d.ts';
-		},
-		getNewLine: () => {
-			return '\n';
-		},
-		getSourceFile: ( filename ) => {
-			return ts.createSourceFile( filename, code, ts.ScriptTarget.Latest, true );
-		},
-		readFile: () => {
-			return undefined;
-		},
-		useCaseSensitiveFileNames: () => {
-			return true;
-		},
-		writeFile: () => {
-			return null;
-		}
-	};
-	const fileName = 'test.mts';
-	const program = ts.createProgram( [
-		fileName
-	], {
-		noResolve: true,
-		target: ts.ScriptTarget.Latest
-	}, compilerHost );
-	const sourceFile = program.getSourceFile( fileName )!;
+export default async function parse( files: Array<string> ): Promise<Array<ts.SourceFile>> {
+	const fileContents = await readFiles( files );
+	const sourceFiles = fileContents.map( ( content: string, i: number ) => {
+		const fileName = files[ i ]!;
 
-	return sourceFile;
+		return ts.createSourceFile( fileName, content, ts.ScriptTarget.Latest, true );
+	} );
+
+	return sourceFiles;
+}
+
+async function readFiles( files: Array<string> ): Promise<Array<string>> {
+	const readPromises = files.map( ( filePath ) => {
+		return readFile( filePath, 'utf-8' );
+	} );
+
+	return Promise.all( readPromises );
 }
