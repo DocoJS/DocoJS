@@ -191,6 +191,9 @@ importers:
       '@comandeer/rollup-lib-bundler':
         specifier: ^0.22.1
         version: 0.22.1
+      '@types/node':
+        specifier: ^20.12.2
+        version: 20.12.2
       ava:
         specifier: ^6.1.2
         version: 6.1.2

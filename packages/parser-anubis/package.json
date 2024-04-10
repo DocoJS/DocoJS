@@ -36,6 +36,7 @@
   "homepage": "https://github.com/Comandeer/DocoJS/tree/main/packages/parser-anubis#readme",
   "devDependencies": {
     "@comandeer/rollup-lib-bundler": "^0.22.1",
+    "@types/node": "^20.12.2",
     "ava": "^6.1.2",
     "c8": "^9.1.0",
     "tsx": "^4.7.1"
