@@ -4,5 +4,6 @@ export {
 	type MultiProjectConfig,
 	type Config
 } from './Config.js';
+export { type Node } from './Node.js';
 export { type Parser } from './Parser.js';
 export { type Theme } from './Theme.js';
