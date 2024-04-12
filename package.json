@@ -22,7 +22,8 @@
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.0",
     "execa": "^8.0.1",
-    "husky": "^9.0.11"
+    "husky": "^9.0.11",
+    "ts-to-zod": "^3.8.2"
   },
   "commitplease": {
     "nohook": true,
