@@ -1,10 +1,17 @@
 import zod from 'zod';
 
+const nodeTypeSchema = zod.enum( [
+	'property'
+] );
+const nodeSchema = zod.object( {
+	name: zod.string(),
+	type: nodeTypeSchema
+} );
 const parserSchema = zod.object( {
 	files: zod.array( zod.string() ),
 	exclude: zod.array( zod.string() ),
 	// TODO: get schema from Parser interface (ts-to-zod?)
-	parser: zod.function()
+	parser: zod.function().returns( zod.promise( zod.array( nodeSchema ) ) )
 } );
 const projectInputSchema = zod.object( {
 	packages: zod.array( zod.string() ),
