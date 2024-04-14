@@ -1,18 +1,8 @@
 import zod from 'zod';
+import { generatorSchema } from './generator.js';
+import { themeSchema } from './theme.js';
+import { parserSchema } from './parser.js';
 
-const nodeTypeSchema = zod.enum( [
-	'property'
-] );
-const nodeSchema = zod.object( {
-	name: zod.string(),
-	type: nodeTypeSchema
-} );
-const parserSchema = zod.object( {
-	files: zod.array( zod.string() ),
-	exclude: zod.array( zod.string() ),
-	// TODO: get schema from Parser interface (ts-to-zod?)
-	parser: zod.function().returns( zod.promise( zod.array( nodeSchema ) ) )
-} );
 const projectInputSchema = zod.object( {
 	packages: zod.array( zod.string() ),
 	exclude: zod.array( zod.string() )
@@ -25,10 +15,6 @@ const inputSchema = zod.union( [
 	projectInputSchema,
 	packageInputSchema
 ] );
-const themeSchema = zod.object( {
-	layouts: zod.record( zod.string() )
-} );
-const generatorSchema = zod.function().returns( zod.promise( zod.void() ) );
 const outputSchema = zod.object( {
 	dir: zod.string(),
 	// TODO: get schema from Generator interface (ts-to-zod?)

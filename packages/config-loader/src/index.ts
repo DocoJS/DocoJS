@@ -4,7 +4,7 @@ import { pathToFileURL } from 'node:url';
 import { Config } from '@docojs/core';
 import { globby } from 'globby';
 import merge from 'lodash.merge';
-import { configSchema } from './configSchema.js';
+import { configSchema } from './schemas/config.js';
 
 interface LoadConfigOptions {
 	projectRoot?: string;
