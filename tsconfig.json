@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"module": "node16",
+		"moduleResolution": "node16",
+		"noImplicitOverride": true,
+		"noUncheckedIndexedAccess": true,
+		"skipLibCheck": true,
+		"strictNullChecks": true,
+		"strict": true,
+	},
+	"include": [
+		"dev/**/*"
+	]
+}
