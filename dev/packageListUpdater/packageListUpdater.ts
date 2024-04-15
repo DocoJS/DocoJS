@@ -9,10 +9,18 @@ const packages = await readdir( packagesPath );
 let table = `| Package | npm version |
 | ----- | ---- |`;
 
+interface PackageJSON {
+	readonly name: string;
+}
+
+interface PackageJSONModule {
+	default: PackageJSON;
+}
+
 for ( const packageName of packages ) {
 	const packagePath = resolvePath( packagesPath, packageName );
 	const packageJSONPath = resolvePath( packagePath, 'package.json' );
-	const { default: packageJSON } = await import( packageJSONPath, {
+	const { default: packageJSON }: PackageJSONModule = await import( packageJSONPath, {
 		with: {
 			type: 'json'
 		}
