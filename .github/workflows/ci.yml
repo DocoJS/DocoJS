@@ -28,7 +28,7 @@ jobs:
       - name: Enable Corepack
         run: corepack enable pnpm
       - name: Install pnpm
-        run: corepack prepare pnpm@latest-8 --activate
+        run: corepack prepare pnpm@latest --activate
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Lint code
