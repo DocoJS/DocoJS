@@ -3,6 +3,10 @@
   "description": "DocoJS monorepo",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
   "scripts": {
     "build": "pnpm --recursive build",
     "prelint": "pnpm run build",
