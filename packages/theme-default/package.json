@@ -42,7 +42,7 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@docojs/core": "^0.0.0",
+    "@docojs/core": "workspace:^",
     "tslib": "^2.6.2"
   }
 }

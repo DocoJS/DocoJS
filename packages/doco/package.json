@@ -46,8 +46,8 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@docojs/config-loader": "^0.0.0",
-    "@docojs/core": "^0.0.0",
+    "@docojs/config-loader": "workspace:^",
+    "@docojs/core": "workspace:^",
     "commander": "^12.0.0",
     "tslib": "^2.6.2"
   }
