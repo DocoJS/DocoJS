@@ -168,6 +168,9 @@ importers:
       '@11ty/eleventy':
         specifier: ^2.0.1
         version: 2.0.1
+      '@docojs/core':
+        specifier: workspace:^
+        version: link:../core
       tslib:
         specifier: ^2.6.2
         version: 2.6.2
