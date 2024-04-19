@@ -1,3 +1,5 @@
 import { Theme } from './Theme.js';
 
-export type Generator = ( inputDirPath: string, outputDirPath: string, theme: Theme ) => Promise<void>;
+export interface Generator {
+	generate: ( inputDirPath: string, outputDirPath: string, theme: Theme ) => Promise<void>;
+}

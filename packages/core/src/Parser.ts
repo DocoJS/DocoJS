@@ -1,3 +1,5 @@
 import { Node } from './Node.js';
 
-export type Parser = ( files: Array<string> ) => Promise<Array<Node>>;
+export interface Parser {
+	parse: ( files: ReadonlyArray<string> ) => Promise<Array<Node>>;
+}
