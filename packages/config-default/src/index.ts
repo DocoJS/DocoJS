@@ -1,4 +1,5 @@
 import { ProjectConfig } from '@docojs/core';
+import Generator from '@docojs/generator-11ty';
 import defaultTheme from '@docojs/theme-default';
 
 const config: ProjectConfig = {
@@ -14,7 +15,7 @@ const config: ProjectConfig = {
 	},
 	output: {
 		dir: './docs',
-		async generator() {},
+		generator: new Generator(),
 		theme: defaultTheme
 	}
 };
