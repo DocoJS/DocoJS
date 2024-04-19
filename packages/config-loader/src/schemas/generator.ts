@@ -1,3 +1,5 @@
 import zod from 'zod';
 
-export const generatorSchema = zod.function().returns( zod.promise( zod.void() ) );
+export const generatorSchema = zod.object( {
+	generate: zod.function().returns( zod.promise( zod.void() ) )
+} );
