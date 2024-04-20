@@ -16,3 +16,7 @@ Monorepo for DocoJS – a documentation generator for TS & JS projects.
 | [`@docojs/parser-typedoc`](https://github.com/Comandeer/DocoJS/tree/main/packages/parser-typedoc) | [![npm (scoped)](https://img.shields.io/npm/v/@docojs/parser-typedoc.svg)](https://npmjs.com/package/@docojs/parser-typedoc) |
 | [`@docojs/theme-default`](https://github.com/Comandeer/DocoJS/tree/main/packages/theme-default) | [![npm (scoped)](https://img.shields.io/npm/v/@docojs/theme-default.svg)](https://npmjs.com/package/@docojs/theme-default) |
 <!--packages:end-->
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) file for details.
