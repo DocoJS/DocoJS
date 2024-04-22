@@ -10,7 +10,7 @@
   "scripts": {
     "build": "pnpm --recursive build",
     "prelint": "pnpm run build",
-    "lint": "eslint \"./packages/*/src/**/*.ts\" \"./packages/*/tests/**/*.ts\"",
+    "lint": "eslint \"./packages/*/src/**/*.ts\" \"./packages/*/tests/**/*.ts\" \"./dev/*/*.ts\"",
     "prepare": "husky",
     "pretest": "pnpm run build",
     "test": "pnpm --recursive test",
