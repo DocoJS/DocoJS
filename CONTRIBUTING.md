@@ -4,14 +4,14 @@ First of all: thanks for your effort!
 
 ## Reporting an issue/proposing new feature
 
-1. If you encounters an issue while working with this package, first of all ensures it's caused by the package itself, not any third-party code or your browser (you can )
-2. If the issue is caused by the package, [create a new issue](/../../issues/new) for it, according to the template.
-3. If you want to propose new feature instead of reporting an issue, just delete issue's template and write small explanation why you want this feature and why should we implement it.
+1. If you encounter an issue while working with this package, first of all ensure it's caused by the package itself, not any third-party code or your browser.
+2. If the issue is caused by the package, [create a new issue](../../issues/new?assignees=&labels=bug&projects=&template=1-bug.yml) describing it, according to the template.
+3. If you want to propose a new feature instead, [use the decicated issue template](../../issues/new?assignees=&labels=feature&projects=&template=2-feature.yml).
 
 ## Contributing code
 
-1. If you want to contribute code to this package, you should do it via [pull request](/../../pulls).
-2. First of all, fork this repository and create `t/<number>` branch, where `<number>` is a number of [an issue](/../../issues) you're going to fix.
+1. If you want to contribute code to this package, you should do it via a [pull request](/../../pulls).
+2. First of all, fork this repository and create `t/<number>` branch, where `<number>` is a number of [the issue](/../../issues) you're going to fix.
 3. Prepare the [development environment](#development-environment).
 4. Write your code and commit it to your branch.
   * Commit messages should use the [Conventional Commits convention](https://www.conventionalcommits.org/en/v1.0.0/). The repository uses Commitizen to help in composing a commit message. You can use it by running the `git cz` command.
