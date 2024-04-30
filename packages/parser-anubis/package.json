@@ -42,6 +42,7 @@
     "tsx": "^4.7.1"
   },
   "dependencies": {
+    "@docojs/core": "workspace:^",
     "tslib": "^2.6.2",
     "typescript": "^5.4.5"
   }

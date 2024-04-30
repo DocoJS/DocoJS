@@ -193,6 +193,9 @@ importers:
 
   packages/parser-anubis:
     dependencies:
+      '@docojs/core':
+        specifier: workspace:^
+        version: link:../core
       tslib:
         specifier: ^2.6.2
         version: 2.6.2
