@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/Comandeer/DocoJS/tree/main/packages/config-loader#readme",
   "devDependencies": {
-    "@comandeer/rollup-lib-bundler": "^0.22.1",
+    "@comandeer/rollup-lib-bundler": "^0.23.0",
     "@docojs/config-default": "workspace:^",
     "@types/lodash.merge": "^4.6.9",
     "@types/mock-fs": "^4.13.4",
