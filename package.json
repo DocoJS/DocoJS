@@ -26,10 +26,10 @@
     "@types/node": "20",
     "commitplease": "^3.2.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.57.0",
+    "eslint": "^9.2.0",
     "execa": "^8.0.1",
     "husky": "^9.0.11",
-    "tsx": "^4.7.1"
+    "tsx": "^4.9.3"
   },
   "commitplease": {
     "nohook": true,
