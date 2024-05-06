@@ -39,9 +39,9 @@
     "@docojs/config-default": "workspace:^",
     "@types/lodash.merge": "^4.6.9",
     "@types/mock-fs": "^4.13.4",
-    "ava": "^6.1.2",
+    "ava": "^6.1.3",
     "c8": "^9.1.0",
-    "tsx": "^4.7.1",
+    "tsx": "^4.9.3",
     "typescript": "^5.4.5"
   },
   "dependencies": {
