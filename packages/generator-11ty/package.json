@@ -37,9 +37,9 @@
   "homepage": "https://github.com/Comandeer/DocoJS/tree/main/packages/generator-11ty#readme",
   "devDependencies": {
     "@comandeer/rollup-lib-bundler": "^0.23.0",
-    "ava": "^6.1.2",
+    "ava": "^6.1.3",
     "c8": "^9.1.0",
-    "tsx": "^4.7.1",
+    "tsx": "^4.10.0",
     "typescript": "^5.4.5"
   },
   "dependencies": {
