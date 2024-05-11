@@ -31,9 +31,9 @@
   "author": "Comandeer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Comandeer/DocoJS/issues"
+    "url": "https://github.com/DocoJS/DocoJS/issues"
   },
-  "homepage": "https://github.com/Comandeer/DocoJS/tree/main/packages/config-default#readme",
+  "homepage": "https://github.com/DocoJS/DocoJS/tree/main/packages/config-default#readme",
   "devDependencies": {
     "@comandeer/rollup-lib-bundler": "^0.23.0",
     "ava": "^6.1.2",

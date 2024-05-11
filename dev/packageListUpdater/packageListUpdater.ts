@@ -27,7 +27,7 @@ for ( const packageName of packages ) {
 	} );
 	const npmName = packageJSON.name;
 
-	table += `\n| [\`${ npmName }\`](https://github.com/Comandeer/DocoJS/tree/main/packages/${ packageName }) |`;
+	table += `\n| [\`${ npmName }\`](https://github.com/DocoJS/DocoJS/tree/main/packages/${ packageName }) |`;
 	table += ` [![npm (scoped)](https://img.shields.io/npm/v/${ npmName }.svg)](https://npmjs.com/package/${ npmName }) |`;
 }
 
