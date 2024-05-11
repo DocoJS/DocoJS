@@ -31,7 +31,7 @@
   "author": "Comandeer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Comandeer/DocoJS/issues"
+    "url": "https://github.com/DocoJS/DocoJS/issues"
   },
-  "homepage": "https://github.com/Comandeer/DocoJS/tree/main/packages/{{PACKAGE_NAME}}#readme"
+  "homepage": "https://github.com/DocoJS/DocoJS/tree/main/packages/{{PACKAGE_NAME}}#readme"
 }
