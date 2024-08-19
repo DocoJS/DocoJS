@@ -44,6 +44,6 @@
   },
   "dependencies": {
     "tslib": "^2.6.3",
-    "typedoc": "^0.26.5"
+    "typedoc": "^0.26.6"
   }
 }
