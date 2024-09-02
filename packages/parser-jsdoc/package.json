@@ -43,7 +43,7 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "jsdoc-api": "^8.1.1",
-    "tslib": "^2.6.3"
+    "jsdoc-api": "^9.3.1",
+    "tslib": "^2.7.0"
   }
 }

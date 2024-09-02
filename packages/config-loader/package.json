@@ -48,7 +48,7 @@
     "@docojs/core": "workspace:^",
     "globby": "^14.0.2",
     "lodash.merge": "^4.6.2",
-    "tslib": "^2.6.3",
+    "tslib": "^2.7.0",
     "zod": "^3.23.8"
   }
 }

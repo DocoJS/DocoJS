@@ -49,6 +49,6 @@
     "@docojs/config-loader": "workspace:^",
     "@docojs/core": "workspace:^",
     "commander": "^12.1.0",
-    "tslib": "^2.6.3"
+    "tslib": "^2.7.0"
   }
 }

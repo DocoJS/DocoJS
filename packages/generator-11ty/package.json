@@ -45,6 +45,6 @@
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@docojs/core": "workspace:^",
-    "tslib": "^2.6.3"
+    "tslib": "^2.7.0"
   }
 }
