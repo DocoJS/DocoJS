@@ -41,7 +41,7 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "tslib": "^2.6.3",
+    "tslib": "^2.7.0",
     "zod": "^3.23.8"
   }
 }
